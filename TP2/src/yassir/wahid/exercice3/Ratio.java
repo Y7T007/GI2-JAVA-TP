@@ -5,6 +5,15 @@ public class Ratio {
 	int numera;
 	int denomi = 1;
 
+	public void setDenomi(int denomi) {
+		if ((int) denomi != 0) {
+			this.denomi = denomi;
+		}
+	}
+	public void setNumera(int numera) {
+		this.numera = numera;
+	}
+
 	Ratio produit(Ratio R) {
 		Ratio prod = new Ratio();
 		prod.denomi = R.denomi * this.denomi;
@@ -14,8 +23,8 @@ public class Ratio {
 
 	Ratio addition(Ratio R) {
 		Ratio sum = new Ratio();
-		sum.denomi = R.denomi * this.denomi;
-		sum.numera = this.numera * R.denomi + this.denomi * R.numera;
+		sum.setDenomi(R.denomi * this.denomi);
+		sum.setNumera(this.numera * R.denomi + this.denomi * R.numera);
 		return sum;
 	}
 
@@ -27,14 +36,8 @@ public class Ratio {
 		return ((float) (a.numera / a.denomi) > (float) (this.numera
 				/ this.denomi));
 	}
-
-	public void setDenomi(int denomi) {
-		if ((int) denomi != 0) {
-			this.denomi = denomi;
-		}
-	}
-	public void setNumera(int numera) {
-		this.numera = numera;
+	public String toString() {
+		return "" + this.denomi + "/" + this.numera + "";
 	}
 
 
