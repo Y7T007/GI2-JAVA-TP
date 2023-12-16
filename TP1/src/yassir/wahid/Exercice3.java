@@ -6,13 +6,12 @@ import java.util.Scanner;
 public class Exercice3 {
 
 	public static void main(String[] args) {
-		System.out.println("	hello world ");
 		
 		Scanner scanner = new Scanner(System.in);
 		
 		
 		int i;
-		System.out.println("entrez le nombre pour calculer son factorielle : ");
+		System.out.println("Entrez le nombre pour calculer son factorielle : ");
 		i= scanner.nextInt();
 		
 		int fact=1;
