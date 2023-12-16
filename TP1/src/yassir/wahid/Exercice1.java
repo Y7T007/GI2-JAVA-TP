@@ -2,7 +2,7 @@ package yassir.wahid;
 
 import java.util.Scanner;
 
-public class Main {
+public class Exercice1 {
 
 	public static void main(String[] args) {
 		System.out.println("	hello world ");
