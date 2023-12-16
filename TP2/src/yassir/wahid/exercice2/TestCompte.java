@@ -18,6 +18,8 @@ public class TestCompte {
 		c1.afficher();
 		c2.afficher();
 		
+		Compte c3 = new Compte("Yassir");
+		
 		
 	}
 

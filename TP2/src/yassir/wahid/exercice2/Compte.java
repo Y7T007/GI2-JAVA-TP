@@ -3,7 +3,11 @@ package yassir.wahid.exercice2;
 public class Compte {
 
 		int solde=0 ;
-		String Nom;
+		String Nom="";
+		
+		public Compte(String Nom) {
+			this.Nom=Nom;
+		}
 		
 		void deposer(int montant){
 		solde =solde+montant ;
