@@ -1,5 +1,7 @@
 package yassir.wahid.exercice1;
 
+import java.util.Set;
+
 public class Etudiant {
 	
 	public int Code;
@@ -7,7 +9,7 @@ public class Etudiant {
 	public String Prenom;
 
 	public Etudiant() {
-		
+
 	}
 	
 	public Etudiant(String Nom) {
@@ -25,5 +27,30 @@ public class Etudiant {
 		this.Nom = E_copie.Nom;
 		this.Prenom = E_copie.Prenom;
 	}
+	
+	public int getCode() {
+		return Code;
+	}
+	public String getNom() {
+		return Nom;
+	}
+	public String getPrenom() {
+		return Prenom;
+	}
+	
+	public void setCode(int code) {
+		Code = code;
+	}
+	public void setNom(String nom) {
+		Nom = nom;
+	}
+	public void setPrenom(String prenom) {
+		Prenom = prenom;
+	}
+	
+	public String toString() {
+		return "Etudiant dont son code est "+this.Code+" nom "+this.Nom+" prenom "+this.Prenom;
+	}
+	
 	
 }
