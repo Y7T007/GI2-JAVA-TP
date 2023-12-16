@@ -5,8 +5,11 @@ public class Compte {
 		int solde=0 ;
 		String Nom="";
 		
-		public Compte(String Nom) {
+		Compte(String Nom) {
 			this.Nom=Nom;
+		}
+		Compte(){
+			
 		}
 		
 		void deposer(int montant){
