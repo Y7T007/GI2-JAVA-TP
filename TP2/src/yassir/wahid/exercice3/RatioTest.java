@@ -3,6 +3,7 @@ package yassir.wahid.exercice3;
 public class RatioTest {
 
     public static void main(String[] args) {
+
         Ratio r1 = new Ratio();
         Ratio r2 = new Ratio();
         Ratio r3 = new Ratio();
@@ -28,5 +29,6 @@ public class RatioTest {
         System.out.println("r1: " + r1.toString());
         System.out.println("r2: " + r2.toString());
         System.out.println("r3: " + r3.toString());
+
     }
 }
