@@ -1,6 +1,5 @@
 package yassir.wahid.exercice1;
 
-import java.util.Set;
 
 public class Etudiant {
 	
@@ -9,7 +8,6 @@ public class Etudiant {
 	public String Prenom;
 
 	public Etudiant() {
-
 	}
 	
 	public Etudiant(String Nom) {
@@ -42,7 +40,7 @@ public class Etudiant {
 		Code = code;
 	}
 	public void setNom(String nom) {
-		Nom = nom;
+		Nom = nom;	
 	}
 	public void setPrenom(String prenom) {
 		Prenom = prenom;
