@@ -3,6 +3,8 @@ package yassir.wahid.exercice2;
 public class Compte {
 
 		int solde=0 ;
+		String Nom;
+		
 		void deposer(int montant){
 		solde =solde+montant ;
 		}
@@ -15,7 +17,7 @@ public class Compte {
 		}
 		
 		void afficher(){
-		System.out.println("solde : "+solde) ; 
+		System.out.println("solde : "+solde+", Nom : "+Nom) ; 
 		}
 		
 }
