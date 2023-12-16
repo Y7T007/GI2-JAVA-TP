@@ -17,14 +17,15 @@ public class Compte {
   void retirer(int montant) {
     solde = solde - montant;
   }
-  
 
   void virerVers(int montant, Compte destination) {
-		if (this.solde >= montant) {
-			this.retirer(montant);
-			destination.deposer(montant);
-		}
+    if (this.solde >= montant) {
+      this.retirer(montant);
+      destination.deposer(montant);
+    }
+
   }
+
 
   void afficher() {
     System.out.println("solde : " + solde + ", Nom : " + Nom);
