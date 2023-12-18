@@ -1,10 +1,12 @@
 package yassir.wahid.exercice1;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class TestCompte {
 
 	public static void main(String[] args) {
+
 		ArrayList<Compte> comptes = new ArrayList<>();
 		comptes.add(new Compte(1, 1000, "John Doe"));
 		comptes.add(new Compte(2, 2000, "Jane Smith"));
@@ -21,6 +23,13 @@ public class TestCompte {
 
 		for (Compte compte : comptos) {
 			System.out.println(compte.toString());
+		}
+
+		comptes.addAll(comptos);
+		System.out.println("\n\tmerged tables\n");
+		for (Compte c : comptes) {
+			System.out.println(c.toString());
+
 		}
 	}
 
