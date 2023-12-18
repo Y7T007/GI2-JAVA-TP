@@ -46,4 +46,12 @@ public class Personne {
 		this.Salaire = P.Salaire;
 	}
 
+	// method affichepersonnel
+
+	public String AffichePersonne() {
+		return "\n\t Id:" + this.id + "\n\t Nom:" + this.nom + "\n\t Salaire:"
+				+ this.Salaire + "\n";
+	}
+
 }
+
