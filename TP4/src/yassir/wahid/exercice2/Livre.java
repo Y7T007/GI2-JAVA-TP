@@ -46,4 +46,9 @@ public class Livre extends Produit {
 		this.titre = titre;
 	}
 
+	public void Print() {
+		System.out.println("idProduit: " + idProduit + "\nAuteur : " + auteur
+				+ "\n ISBN : " + ISBN + "\n titre : " + titre);
+	}
+
 }
