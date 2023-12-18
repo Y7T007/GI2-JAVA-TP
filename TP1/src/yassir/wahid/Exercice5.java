@@ -53,6 +53,7 @@ public class Exercice5{
 					
 				}
 
+
 			
 		} while (i!=5);
 	}
