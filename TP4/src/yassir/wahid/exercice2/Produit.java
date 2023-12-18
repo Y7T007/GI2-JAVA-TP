@@ -12,4 +12,8 @@ public class Produit {
 		this.idProduit = idProduit;
 	}
 
+	public void Print() {
+		System.out.println("idProduit: " + idProduit);
+	}
+
 }
