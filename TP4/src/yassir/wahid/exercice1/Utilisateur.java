@@ -73,4 +73,10 @@ public class Utilisateur extends Personne {
 
 	}
 
+	public String AfficheUtilisateur() {
+		return "\n\t Id:" + this.id + "\n\t Nom:" + this.nom + "\n\t Salaire:"
+				+ this.Salaire + "\n\t Login:" + this.login + "\n\t Password:"
+				+ this.Password;
+	}
+
 }
