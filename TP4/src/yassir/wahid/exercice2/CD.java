@@ -46,4 +46,10 @@ public class CD extends Produit {
 		this.titre = titre;
 	}
 
+	public void Print() {
+		System.out.println("idCD: " + super.getIdProduit() + "\nAuteur : "
+				+ this.auteur + "\n prix : " + this.prix + "\n titre : "
+				+ this.titre);
+	}
+
 }
