@@ -10,8 +10,6 @@ public class Exercice5 {
 
 		String[] words = Phrase.split(" ");
 
-
-
 		System.out.println("le nombre de Mots est : " + words.length);
 	}
 }
