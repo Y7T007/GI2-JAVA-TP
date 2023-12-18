@@ -9,6 +9,12 @@ public class Main {
 
 		cd1.Print();
 		l1.Print();
+
+		Produit prd1 = cd1;
+		prd1.Print();
+
+		Produit prd2 = l1;
+		prd2.Print();
 	}
 	
 
