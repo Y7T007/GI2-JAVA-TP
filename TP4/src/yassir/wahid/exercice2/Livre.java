@@ -36,5 +36,14 @@ public class Livre extends Produit {
 		this.titre = titre;
 	}
 
+	public Livre() {
+	}
+
+	public Livre(int idProduit, String auteur, String isbn, String titre) {
+		super.setIdProduit(idProduit);
+		this.auteur = auteur;
+		this.ISBN = isbn;
+		this.titre = titre;
+	}
 
 }
