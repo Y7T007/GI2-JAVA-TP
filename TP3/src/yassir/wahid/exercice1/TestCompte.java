@@ -2,6 +2,7 @@ package yassir.wahid.exercice1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TestCompte {
 
@@ -28,10 +29,30 @@ public class TestCompte {
 		comptes.addAll(comptos);
 		System.out.println("\n\tmerged tables\n");
 		for (Compte c : comptes) {
-			System.out.println(c.toString());
-
+			if (c.getSolde() > 10000) {
+				System.out.println(c.toString());
+			} else {
+				System.out.println("no enough solde");
+			}
 		}
+
+		System.out.print("_______________MENU_________________"
+				+ "\n|\t1) Ajouter un compte."
+				+ "\n|\t2) Afficher tous les comptes. "
+				+ "\n|\t3) Afficher les comptes avec le solde plus de 10000"
+				+ "\n|\t4) Quitter le programme. "
+				+ "\n|___________________________________"
+				+ "\n\n\t\tVotre Choix :  ");
+		Scanner s = new Scanner(System.in);
+		int i = s.nextInt();
+		do {
+			switch (i) {
+				// all the cases goes here for the menu
+
+			}
+
+		} while (i != 4);
+
 	}
 
 }
-
