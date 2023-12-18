@@ -5,6 +5,8 @@ public class Utilisateur extends Personne {
 	String login;
 	String Password;
 
+	// getters
+
 	@Override
 	public int getId() {
 		// TODO Auto-generated method stub
@@ -27,6 +29,7 @@ public class Utilisateur extends Personne {
 		return Password;
 	}
 
+	// setters
 	@Override
 	public void setId(int id) {
 		// TODO Auto-generated method stub
@@ -46,7 +49,28 @@ public class Utilisateur extends Personne {
 		this.login = login;
 	}
 	public void setPassword(String password) {
-		Password = password;
+		this.Password = password;
+	}
+
+	// constructor par default
+	public Utilisateur() {
+	}
+
+	// constructor par initialisation
+	public Utilisateur(int id, String nom, int salaire, String login,String Password) {
+		super.setId(id);
+		super.setNom(nom);
+		super.setSalaire(salaire);
+		this.login = login;
+		this.Password = Password;
+	}
+	public Utilisateur(Utilisateur U) {
+		super.setId(U.getId());
+		super.setNom(U.getNom());;
+		super.setSalaire(U.getSalaire());
+		this.login = U.getLogin();
+		this.Password = U.getPassword();
+
 	}
 
 }
