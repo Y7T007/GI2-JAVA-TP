@@ -29,14 +29,18 @@ public class Compte {
 	// constructor par default
 
 	public Compte() {
-
 	}
 
 	// Constructor par initialization
 
 	public Compte(int numCompte, int solde, String proprietaire) {
 		this.numCompte = numCompte;
+		this.solde = solde;
+		this.proprietaire = proprietaire;
+	}
 
+	public String toString() {
+		return "Compte(" + numCompte +" : "+solde+") de :("+proprietaire+")";
 	}
 
 }
